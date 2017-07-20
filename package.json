@@ -1,9 +1,10 @@
 {
-  "name": "SloMo.World by Robutussin®",
+  "name": "SloMoWorld",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "jquery": "^3.2.1",
+    "node-id3": "0.0.9",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
