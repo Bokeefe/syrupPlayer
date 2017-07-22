@@ -7,13 +7,12 @@ import $ from 'jquery';
 class AudioComponent extends Component {
   constructor(props){
     super(props);
-
+    console.log(this.props);
   }
 
   componentDidMount(){
     const player = $('#player');
     this.props.setPlayer(player[0]);
-
   }
   render() {
     return (

@@ -11,18 +11,19 @@ class ControlComponent extends Component {
 
   setPlayer(player){
     this.setState({player});
-
   }
 
   playPause(){
     if(this.state.player.paused){
-
-      console.log(this.state.player);
+    this.state.player.play();
+    console.log(this.state.player.paused);
     $('#playPause').toggleClass('fa-pause-circle');
     } else {
-      this.state.player.pause();
-      $('#playPause').toggleClass('fa-pause-circle');
+          this.state.player.pause();
+    console.log(this.state.player.paused);
+    $('#playPause').toggleClass('fa-pause-circle');
     }
+
   }
   render(){
 
